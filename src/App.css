@@ -135,7 +135,7 @@ h2 {
   border: 1px solid #fff !important;
   border-color: #fff;
   border-color: var(--color-white);
-  background-color: hsla(0,0%,100%,.4);
+  background-color: hsla(0,0%,100%,.4) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
