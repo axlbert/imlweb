@@ -132,7 +132,6 @@ h2 {
 
 .blurBtn {
   border-radius: 5px;
-  border: 1px solid #fff !important;
   border-color: #fff;
   border-color: var(--color-white);
   background-color: hsla(0,0%,100%,.4) !important;

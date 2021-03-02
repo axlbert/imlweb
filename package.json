@@ -1,7 +1,7 @@
 {
   "name": "imlweb",
   "version": "0.1.0",
-  "homepage": "http://axlbert.github.io/imlweb",
+  "homepage": "http://axlbert.github.io/imlweb/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
