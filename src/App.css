@@ -174,8 +174,8 @@ h2 {
 }
 
 .cardItem-lg {
-  min-height: 200px;
-  height: 40vh;
+  height: auto;
+  min-height: 40vh;
   padding-bottom: 20px;
   border-radius: 5px;
   border: 2px solid #fff !important;
@@ -200,6 +200,7 @@ h2 {
 }
 
 .processCard {
+    position:relative;
     margin: 5px;
     width: 16%;
     border-radius: 5px;
@@ -214,6 +215,7 @@ h2 {
   position: relative;
   text-align: center;
   width: 100%;
+  height: 100%;
 }
 
 .floatText {
@@ -272,6 +274,9 @@ h2 {
   bottom: 30px;
 }
 
+.typeform {
+  height: 100%
+}
 
 @media only screen and (max-width: 800px) {
   .mainContent {
@@ -308,6 +313,10 @@ h2 {
     flex-direction: column !important;
     width: 100% !important;
     flex-wrap: nowrap !important;
+  }
+
+  .typeform { 
+    height: 85%
   }
   
 }

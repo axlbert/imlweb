@@ -14,8 +14,7 @@ export default function HeaderNav(props) {
                 direction="row"
                 justify="flex-start"
                 alignItems="flex-start">
-                
-                    
+
                     <img src={firmenlogo} alt="firmenlogo" style={{maxWidth:"200px",marginLeft: "10px"}} onClick={() => props.handleClick("cat1")}/>
                 
                     

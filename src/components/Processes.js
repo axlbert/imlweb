@@ -13,7 +13,7 @@ import laser from '../img/lasern.png';
 //import prozess from '../img/prozess.png';
 import Zoom from 'react-reveal/Zoom';
 
-const machines = [{name: 'Beschriftungslaser', photo: laser},{name: 'Fräsen', photo: fraesen},{name: 'Drehen CNC und konventionell', photo: drehen},{name: 'Bohren', photo: bohren},{name: 'Tempern', photo: tempern},{name: 'Warmeinbetten', photo: warmeinbetten},{name: 'Montage', photo: montage},{name: 'Tampon- und Siebdruck', photo: tampondruck},{name: 'Spritzguss', photo: spritzguss},{name: 'Ultraschall Schweißen', photo: ultraschall}]
+const machines = [{name: 'Laser Beschriftung', photo: laser},{name: 'Fräsen', photo: fraesen},{name: 'Drehen CNC und konventionell', photo: drehen},{name: 'Bohren', photo: bohren},{name: 'Tempern', photo: tempern},{name: 'Warmeinbetten', photo: warmeinbetten},{name: 'Montage', photo: montage},{name: 'Tampon- und Siebdruck', photo: tampondruck},{name: 'Spritzguss', photo: spritzguss},{name: 'Ultraschall Schweißen', photo: ultraschall}]
 
 
 export default function Processes() {
@@ -22,9 +22,8 @@ export default function Processes() {
             <Grid
                 container
                 direction="column"
-                justify="space-around"
                 alignItems="center"
-                style={{overflow:"scroll"}}
+                className="respWrap"
                 
             >
             <h1 className="siteSubHeadline">

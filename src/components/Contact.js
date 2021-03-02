@@ -31,7 +31,7 @@ export default function Contact() {
                     xs={11}
                     sm={5}
                     className="cardItem-lg"
-                    style={{paddingBottom:"0px",marginBottom:"20px"}}
+                    style={{paddingBottom:"0px",marginBottom:"20px",height:"40vh"}}
                 >
                    
                      <MapContainer style={{height:"100%"}} center={[53.88358577671143, 10.81687012544359]} zoom={11} scrollWheelZoom={false}>

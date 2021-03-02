@@ -8,8 +8,9 @@ export default function Reasons() {
             <Grid
                 container
                 direction="column"
-                justify="space-around"
+                
                 alignItems="center"
+                className="respWrap"
             >
             <h1 className="siteSubHeadline">
             Kurze Durchlaufzeiten und attraktive Preise - wir lösen Ihr Produktionsproblem

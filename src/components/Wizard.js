@@ -18,7 +18,7 @@ export default function Wizard() {
             
          
 
-            <ReactTypeformEmbed style={{height:"85%"}} url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
+            <ReactTypeformEmbed className="typeform" url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
                 
            
 
