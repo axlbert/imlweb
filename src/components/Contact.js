@@ -10,8 +10,8 @@ export default function Contact() {
             <Grid
                 container
                 direction="column"
-                justify="space-around"
                 alignItems="center"
+                className="respWrap"
             >
             
             <h1 className="siteSubHeadline">

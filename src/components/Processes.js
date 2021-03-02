@@ -24,6 +24,7 @@ export default function Processes() {
                 direction="column"
                 justify="space-around"
                 alignItems="center"
+                style={{overflow:"scroll"}}
                 
             >
             <h1 className="siteSubHeadline">

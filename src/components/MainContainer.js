@@ -44,6 +44,7 @@ export default class MainContainer extends React.Component {
             alignItems="center" 
             xs={12}
             
+            
           >
             <Zoom left cascade>
             <h1 className="siteHeadline">

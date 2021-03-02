@@ -13,8 +13,9 @@ export default function Quality() {
             <Grid
                 container
                 direction="column"
-                justify="space-around"
+                
                 alignItems="center"
+                className="respWrap"
             >
             <Zoom>
             <h1 className="siteSubHeadline">

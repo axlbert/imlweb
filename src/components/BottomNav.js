@@ -12,10 +12,11 @@ export default function BottomNav(props) {
 
   return (
     <>
-            <Grid style={{position: "absolute",bottom: "30px"}} container
+            <Grid  container
                 direction="row"
                 justify="space-around"
-                alignItems="center">
+                alignItems="center"
+                className="bottomNav">
                 <Grid 
                     container
                     item

@@ -267,6 +267,11 @@ h2 {
   color: #a0a0a0
 }
 
+.bottomNav {
+  position: absolute;
+  bottom: 30px;
+}
+
 
 @media only screen and (max-width: 800px) {
   .mainContent {
@@ -274,6 +279,11 @@ h2 {
   }
   .processOffer {
     padding-top: 0px !important;
+  }
+
+  .bottomNav {
+    position: absolute;
+    bottom: 0px;
   }
   
   
@@ -290,6 +300,14 @@ h2 {
   }
   .processCard {
     width: 80%;
+  }
+  .respWrap {
+    height: 70%;
+    overflow: scroll;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    flex-wrap: nowrap !important;
   }
   
 }
