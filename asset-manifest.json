@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/imlweb/static/css/main.b9799f0c.chunk.css",
+    "main.js": "/imlweb/static/js/main.9b92b475.chunk.js",
+    "main.js.map": "/imlweb/static/js/main.9b92b475.chunk.js.map",
+    "runtime-main.js": "/imlweb/static/js/runtime-main.5c5d2361.js",
+    "runtime-main.js.map": "/imlweb/static/js/runtime-main.5c5d2361.js.map",
+    "static/js/2.0e5ed112.chunk.js": "/imlweb/static/js/2.0e5ed112.chunk.js",
+    "static/js/2.0e5ed112.chunk.js.map": "/imlweb/static/js/2.0e5ed112.chunk.js.map",
+    "static/js/3.51a3a55c.chunk.js": "/imlweb/static/js/3.51a3a55c.chunk.js",
+    "static/js/3.51a3a55c.chunk.js.map": "/imlweb/static/js/3.51a3a55c.chunk.js.map",
+    "index.html": "/imlweb/index.html",
+    "static/css/main.b9799f0c.chunk.css.map": "/imlweb/static/css/main.b9799f0c.chunk.css.map",
+    "static/js/2.0e5ed112.chunk.js.LICENSE.txt": "/imlweb/static/js/2.0e5ed112.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/imlweb/static/media/bg6.b9ddad47.jpg",
+    "static/media/bohren.5b4970cc.png": "/imlweb/static/media/bohren.5b4970cc.png",
+    "static/media/drehen.377231fb.png": "/imlweb/static/media/drehen.377231fb.png",
+    "static/media/firmelogo.54c0d732.png": "/imlweb/static/media/firmelogo.54c0d732.png",
+    "static/media/fraesen.a54babc7.png": "/imlweb/static/media/fraesen.a54babc7.png",
+    "static/media/lasern.5777b686.png": "/imlweb/static/media/lasern.5777b686.png",
+    "static/media/montage.e9750131.png": "/imlweb/static/media/montage.e9750131.png",
+    "static/media/qm1.c72fec80.png": "/imlweb/static/media/qm1.c72fec80.png",
+    "static/media/qm2.f7f12441.jpg": "/imlweb/static/media/qm2.f7f12441.jpg",
+    "static/media/qm3.ded93583.png": "/imlweb/static/media/qm3.ded93583.png",
+    "static/media/spritzguss.b6df1c50.png": "/imlweb/static/media/spritzguss.b6df1c50.png",
+    "static/media/tampondruck.80314024.png": "/imlweb/static/media/tampondruck.80314024.png",
+    "static/media/tempern.9963ecf5.png": "/imlweb/static/media/tempern.9963ecf5.png",
+    "static/media/ultraschall.41c07cc1.png": "/imlweb/static/media/ultraschall.41c07cc1.png",
+    "static/media/warmeinbetten.09d3a7d1.png": "/imlweb/static/media/warmeinbetten.09d3a7d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c5d2361.js",
+    "static/js/2.0e5ed112.chunk.js",
+    "static/css/main.b9799f0c.chunk.css",
+    "static/js/main.9b92b475.chunk.js"
+  ]
+}
