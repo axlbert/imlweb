@@ -10,15 +10,16 @@ export default function Wizard() {
             <Grid
                 container
                 direction="column"
-                justify="space-around"
+              
                 alignItems="center"
+                
                 
             >
                 
             
          
 
-            <ReactTypeformEmbed className="typeform" url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
+            <ReactTypeformEmbed style={{top:"50px",height:"70vh"}} className="typeform" url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
                 
            
 
