@@ -14,12 +14,53 @@ import Button from '@material-ui/core/Button';
 import Zoom from 'react-reveal/Zoom';
 import CookieConsent from "react-cookie-consent";
 
+import pic1 from '../img/iml13.jpeg';
+import pic2 from '../img/iml15.jpeg';
+import pic3 from '../img/iml16.jpeg';
+import pic4 from '../img/iml20.jpeg';
+import pic5 from '../img/iml22.jpeg';
+import pic6 from '../img/iml25.jpeg';
+import pic7 from '../img/iml26.jpeg';
+
+
+
 export default class MainContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {category: "cat1"};
+
+    const images = [
+      pic1, pic2, pic3, pic4,pic5,pic6,pic7
+    ]
+
+    this.state = {category: "cat1",
+    images,
+    currentImg: 0
+  
+  };
 
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.changeBackgroundImage(), 3000);
+  }
+
+  componentWillUnmount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
+  }
+
+  changeBackgroundImage() {
+    let newCurrentImg = 0;
+    const {images, currentImg} = this.state;
+    const noOfImages = images.length;
+
+    if (currentImg !== noOfImages - 1) {
+      newCurrentImg = currentImg + 1;
+    }
+
+    this.setState({currentImg: newCurrentImg});
   }
 
 
@@ -28,10 +69,14 @@ export default class MainContainer extends React.Component {
 }
 
   render () {
+    const {images, currentImg} = this.state;
+    const urlString = `url('${images[currentImg]}')`;
 
     if (this.state.category === 'cat1') {
       return (
-        <div className="backgroundSetting">
+        <div className="backgroundSetting"
+        style={{ backgroundImage: urlString }}
+        >
           <div className="backgroundOverlay">
           <Grid item style={{height: "120px"}} xs={12}>
           <HeaderNav handleClick={this.handleClick}/>

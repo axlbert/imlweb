@@ -13,7 +13,7 @@ import laser from '../img/lasern.png';
 //import prozess from '../img/prozess.png';
 import Zoom from 'react-reveal/Zoom';
 
-const machines = [{name: 'Laser Beschriftung', photo: laser},{name: 'Fräsen', photo: fraesen},{name: 'Drehen CNC', photo: drehen},{name: 'Bohren', photo: bohren},{name: 'Tempern', photo: tempern},{name: 'Warmeinbetten', photo: warmeinbetten},{name: 'Montage', photo: montage},{name: 'Tampon- und Siebdruck', photo: tampondruck},{name: 'Spritzguss', photo: spritzguss},{name: 'Ultraschall Schweißen', photo: ultraschall}]
+const machines = [{name: 'Laser Beschriftung', photo: laser},{name: 'Fräsen', photo: fraesen},{name: 'Drehen CNC', photo: drehen},{name: 'Bohren', photo: bohren},{name: 'Tempern', photo: tempern},{name: 'Schrauben', photo: warmeinbetten},{name: 'Montage', photo: montage},{name: 'Tampon- und Siebdruck', photo: tampondruck},{name: 'Spritzguss', photo: spritzguss},{name: 'Ultraschall Schweißen', photo: ultraschall}]
 
 
 export default function Processes() {

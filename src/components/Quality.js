@@ -1,11 +1,11 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import qm1 from '../img/qm1.png';
-import qm2 from '../img/qm2.jpg';
-import qm3 from '../img/qm3.png';
+import qm1 from '../img/iml3.jpeg';
+import qm2 from '../img/iml7.jpeg';
+import qm3 from '../img/iml19.jpeg';
 import Zoom from 'react-reveal/Zoom';
 
-const machines = [{name: 'Messmittelraum', photo: qm1},{name: 'Prüfprotokolle', photo: qm2},{name: 'Prozessaudits', photo: qm3}]
+const machines = [{name: 'Messmittelraum', photo: qm1},{name: 'Digitale Messmittel', photo: qm2},{name: 'Prüfprotokolle', photo: qm3}]
 
 export default function Quality() {
   return (
@@ -36,6 +36,7 @@ export default function Quality() {
                   
                     <div
                     className="processCard"
+                    style={{width:"25%"}}
                     key={element.name}
                 >
                     
