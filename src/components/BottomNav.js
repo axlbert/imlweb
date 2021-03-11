@@ -6,7 +6,10 @@ import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
-
+import {
+    Link
+  } from "react-router-dom";
+  
 
 export default function BottomNav(props) {
 
@@ -26,8 +29,10 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                        <BusinessIcon fontSize="large" className="iconDefault"  onClick={() => props.handleClick("cat3")}  />
-                        <span className="navText">Leistungsspektrum</span>
+                        <Link to="/processes" className="centerHelp">
+                            <BusinessIcon fontSize="large" className="iconDefault" />
+                            <span className="navText">Leistungsspektrum</span>
+                        </Link>
                     
                     
                 </Grid>
@@ -40,8 +45,10 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                    <LocalOfferIcon fontSize="large" className="iconDefault" onClick={() => props.handleClick("cat2")}  />
-                    <span className="navText">Angebot anfragen</span>
+                    <Link to="/wizard" className="centerHelp">
+                        <LocalOfferIcon fontSize="large" className="iconDefault" />
+                        <span className="navText">Angebot anfragen</span>
+                    </Link>
                 </Grid>
                 <Grid 
                     container
@@ -52,9 +59,12 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                    <ImportContactsIcon fontSize="large" className="iconDefault" onClick={() => props.handleClick("cat4")} />
+
+                    <Link to="/quality" className="centerHelp">
+                        <ImportContactsIcon fontSize="large" className="iconDefault"  />
                     
                     <span className="navText">Qualitätssicherung</span>
+                    </Link>
                 </Grid>
                 <Grid 
                     container
@@ -64,10 +74,14 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                    <ContactPhoneIcon fontSize="large" className="iconDefault" onClick={() => props.handleClick("cat5")}/>
+                    <Link to="/contact" className="centerHelp">
+                    <ContactPhoneIcon fontSize="large" className="iconDefault" />
                     <span className="navText">Kontakt & Impressum</span>
+                    </Link>
                 </Grid>
-                <span className="policySpacer" onClick={() => props.handleClick("cat8")}>Datenschutz</span>
+                <Link to="/impressum">
+                <span className="policySpacer">Datenschutz</span>
+                </Link>
             </Grid>
     </>
   );

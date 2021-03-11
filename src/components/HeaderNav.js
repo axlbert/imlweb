@@ -3,7 +3,9 @@ import Grid from '@material-ui/core/Grid';
 
 import firmenlogo from '../img/firmelogo.png';
 
-
+import {
+  Link
+} from "react-router-dom";
 
 export default function HeaderNav(props) {
   
@@ -18,14 +20,14 @@ export default function HeaderNav(props) {
                     <img src={firmenlogo} alt="firmenlogo" style={{maxWidth:"200px",marginLeft: "10px"}} onClick={() => props.handleClick("cat1")}/>
                 
                     
-                    <span className="headerNav" onClick={() => props.handleClick("cat2")}>Angebot anfragen</span>
+                    <Link to="/wizard" style={{textDecoration: "none"}}><span className="headerNav" >Angebot anfragen</span></Link>
                 
                     
-                    <span className="headerNav" onClick={() => props.handleClick("cat6")}>Gute Argumente</span>
+                    <Link to="/reasons" style={{textDecoration: "none"}}><span className="headerNav" >Gute Argumente</span></Link>
                 
                 
                     
-                    <span className="headerNav" onClick={() => props.handleClick("cat5")}>Kontakt</span>
+                    <Link to="/contact" style={{textDecoration: "none"}}><span className="headerNav" >Kontakt</span></Link>
                 
             </Grid>
     </div>

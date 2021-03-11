@@ -13,7 +13,6 @@ export default function Quality() {
             <Grid
                 container
                 direction="column"
-                
                 alignItems="center"
                 className="respWrap"
             >
@@ -27,6 +26,7 @@ export default function Quality() {
                 direction="row"
                 justify="space-around"
                 alignItems="center"
+                style={{height: "60vh"}}
             >
 
 {
@@ -35,8 +35,9 @@ export default function Quality() {
                 return(
                   
                     <div
-                    className="processCard"
-                    style={{width:"25%"}}
+                    className="processCard2"
+                    
+                    
                     key={element.name}
                 >
                     

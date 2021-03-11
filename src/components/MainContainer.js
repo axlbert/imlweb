@@ -3,15 +3,23 @@ import '../App.css';
 import BottomNav from './BottomNav.js';
 import HeaderNav from './HeaderNav.js';
 import Wizard from './Wizard.js';
+import Landing from './Landing.js';
 import Processes from './Processes.js';
 import Quality from './Quality.js'
 import Contact from './Contact.js'
 import Reasons from './Reasons.js'
 import Delivery from './Delivery.js'
 import DataProtection from './DataProtection.js'
+
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
-import Zoom from 'react-reveal/Zoom';
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
 import CookieConsent from "react-cookie-consent";
 
 import pic1 from '../img/iml13.jpeg';
@@ -72,8 +80,8 @@ export default class MainContainer extends React.Component {
     const {images, currentImg} = this.state;
     const urlString = `url('${images[currentImg]}')`;
 
-    if (this.state.category === 'cat1') {
       return (
+        <Router>
         <div className="backgroundSetting"
         style={{ backgroundImage: urlString }}
         >
@@ -91,22 +99,33 @@ export default class MainContainer extends React.Component {
             
             
           >
-            <Zoom left cascade>
-            <h1 className="siteHeadline">
+            <Switch>
+                <Route exact path="/">
+                    <Landing/>
+                </Route>
+                <Route exact path="/wizard">
+                    <Wizard/>
+                </Route>
+                <Route exact path="/delivery">
+                    <Delivery />
+                </Route>
+                <Route  exact path="/processes">
+                    <Processes/>
+                </Route>
+                <Route  exact path="/quality">
+                    <Quality/>
+                </Route>
+                <Route exact path="/contact">
+                    <Contact/>
+                </Route>
+                <Route exact path="/reasons">
+                    <Reasons/>
+                </Route>
+                <Route exact path="/impressum">
+                    <DataProtection/>
+                </Route>
+            </Switch>
             
-            Kunststoff - einfach machen
-            
-          </h1>
-          
-          <span className="pitchText">CNC-Bearbeitung, Beschriftung, Montage - beste Preise, kürzeste Lieferzeiten.</span>
-          
-          <Button
-            className="blurBtn"
-            onClick={() => this.handleClick('cat2')}
-            >
-              Angebot anfragen
-          </Button>
-          </Zoom>
           </Grid>
           
               <BottomNav handleClick={this.handleClick}/>
@@ -125,120 +144,7 @@ export default class MainContainer extends React.Component {
               
           </div>
         </div>
+        </Router>
       )
     }
-    if (this.state.category === 'cat2') {
-      return (
-        <div className="backgroundSetting">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent" xs={12}>
-            <Wizard/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat3') {
-      return (
-        <div className="backgroundSetting">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent processOffer" xs={12}>
-            <Processes/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat4') {
-      return (
-        <div className="backgroundSetting-qm">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent processOffer" xs={12}>
-            <Quality/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat5') {
-      return (
-        <div className="backgroundSetting-contact">
-          <div className="backgroundOverlay">
-          <Grid item xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent processOffer" xs={12}>
-            <Contact/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat6') {
-      return (
-        <div className="backgroundSetting-contact">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent processOffer" xs={12}>
-            <Reasons/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat7') {
-      return (
-        <div className="backgroundSetting-contact">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item className="mainContent processOffer" xs={12}>
-            <Delivery/>
-          </Grid>
-              <BottomNav handleClick={this.handleClick}/>
-              
-          </div>
-        </div>
-      )
-    }
-    if (this.state.category === 'cat8') {
-      return (
-        <div className="backgroundSetting-contact">
-          <div className="backgroundOverlay">
-          <Grid item  xs={12}>
-          <HeaderNav handleClick={this.handleClick}/>
-          </Grid>
-          <Grid item style={{height:"100%",overflow:"scroll"}}  xs={12}>
-            <DataProtection/>
-          </Grid>
-              
-              
-          </div>
-        </div>
-      )
-    }
-    
-  }
 }

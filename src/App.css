@@ -29,6 +29,13 @@ h2 {
 
 }
 
+.centerHelp {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .iconDefault {
   color: #a0a0a0;
   font-size : 40px;
@@ -211,6 +218,18 @@ h2 {
     display: flex;
 }
 
+.processCard2 {
+  position:relative;
+  margin: 5px;
+  width: 25%;
+  border-radius: 5px;
+  border: 2px solid #fff !important;
+  border-color: #fff;
+  border-color: var(--color-white);
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
 .processPic {
   position: relative;
   text-align: center;
@@ -310,6 +329,9 @@ h2 {
     display: none;
   }
   .processCard {
+    width: 80%;
+  }
+  .processCard2 {
     width: 80%;
   }
   .respWrap {

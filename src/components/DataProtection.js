@@ -1,8 +1,27 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 
 export default function DataProtection(props) {
     return (
-      <div >
+      <Grid
+                container
+                direction="column"
+                alignItems="center"
+                className="respWrap"
+                
+                
+            >
+
+      <Grid
+                container
+                direction="row"
+                justify="space-around"
+                alignItems="center"
+                style={{height: "70vh",overflow:"scroll"}}
+                
+                
+                
+            >
         
   
        
@@ -811,6 +830,7 @@ export default function DataProtection(props) {
             </ul>
           </main>
         </article>
-      </div>
+      </Grid>
+      </Grid>
     );
   }

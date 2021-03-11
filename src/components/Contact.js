@@ -24,6 +24,7 @@ export default function Contact() {
                 direction="row"
                 justify="space-around"
                 alignItems="center"
+                style={{height: "40vh"}}
             >
                 
                 <Grid 
