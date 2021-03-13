@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 
+
 export default function Wizard() {
   return (
     <>
@@ -16,10 +17,8 @@ export default function Wizard() {
                 
             >
                 
-            
-         
 
-            <ReactTypeformEmbed style={{top:"50px",height:"70vh"}} className="typeform" url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
+            <ReactTypeformEmbed style={window.innerWidth < 500 ? {top:"50px",height:"calc(100vh - 50px)"} : {top:"50px",height:"80vh"} } className="typeform" url="https://0ocv7asyzfi.typeform.com/to/sEoqMcEW" />;
                 
            
 

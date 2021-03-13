@@ -17,7 +17,7 @@ export default function DataProtection(props) {
                 direction="row"
                 justify="space-around"
                 alignItems="center"
-                style={{height: "70vh",overflow:"scroll"}}
+                style={{height: "100vh",overflow:"scroll",padding:"10px",display:"flex"}}
                 
                 
                 

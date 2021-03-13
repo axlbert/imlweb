@@ -29,7 +29,7 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                        <Link to="/processes" className="centerHelp">
+                        <Link to="/prozesse" className="centerHelp">
                             <BusinessIcon fontSize="large" className="iconDefault" />
                             <span className="navText">Leistungsspektrum</span>
                         </Link>
@@ -45,7 +45,7 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                    <Link to="/wizard" className="centerHelp">
+                    <Link to="/angebot" className="centerHelp">
                         <LocalOfferIcon fontSize="large" className="iconDefault" />
                         <span className="navText">Angebot anfragen</span>
                     </Link>
@@ -60,7 +60,7 @@ export default function BottomNav(props) {
                     sm={3}
                 >
 
-                    <Link to="/quality" className="centerHelp">
+                    <Link to="/qualitaet" className="centerHelp">
                         <ImportContactsIcon fontSize="large" className="iconDefault"  />
                     
                     <span className="navText">Qualitätssicherung</span>
@@ -74,12 +74,12 @@ export default function BottomNav(props) {
                     xs={6}
                     sm={3}
                 >
-                    <Link to="/contact" className="centerHelp">
+                    <Link to="/kontakt" className="centerHelp">
                     <ContactPhoneIcon fontSize="large" className="iconDefault" />
                     <span className="navText">Kontakt & Impressum</span>
                     </Link>
                 </Grid>
-                <Link to="/impressum">
+                <Link to="/datenschutz">
                 <span className="policySpacer">Datenschutz</span>
                 </Link>
             </Grid>

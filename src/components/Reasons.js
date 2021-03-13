@@ -21,13 +21,14 @@ export default function Reasons() {
                 direction="row"
                 justify="space-around"
                 alignItems="center"
+                style={{height: "60vh"}}
             >
                 <Grid 
                     item
                     xs={11}
                     sm={5}
                     className="cardItem-lg"
-                    style={{paddingBottom:"0px"}}
+                    style={{paddingBottom:"0px",paddingLeft:"5px",paddingRight:"5px"}}
                 >
                     <p><span className="expText"><strong>Preise ohne Verwaltungsaufschläge</strong></span></p>
                     <p><span className="expText">Bei uns zahlen Sie für die Fertigung, nicht die Verwaltung</span></p>

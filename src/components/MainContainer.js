@@ -10,14 +10,15 @@ import Contact from './Contact.js'
 import Reasons from './Reasons.js'
 import Delivery from './Delivery.js'
 import DataProtection from './DataProtection.js'
-
+import Drawer from './Drawer.js';
+import Marking from './Marking.js'
+import laser from '../img/lasern.png';
 import Grid from '@material-ui/core/Grid';
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
   } from "react-router-dom";
 
 import CookieConsent from "react-cookie-consent";
@@ -37,7 +38,7 @@ export default class MainContainer extends React.Component {
     super(props);
 
     const images = [
-      pic1, pic2, pic3, pic4,pic5,pic6,pic7
+      pic1, pic2, pic3, pic4,pic5,pic6,pic7,laser
     ]
 
     this.state = {category: "cat1",
@@ -86,8 +87,9 @@ export default class MainContainer extends React.Component {
         style={{ backgroundImage: urlString }}
         >
           <div className="backgroundOverlay">
-          <Grid item style={{height: "120px"}} xs={12}>
+          <Grid item  xs={12}>
           <HeaderNav handleClick={this.handleClick}/>
+          <Drawer/>
           </Grid>
           <Grid 
             container
@@ -96,32 +98,33 @@ export default class MainContainer extends React.Component {
             justify="space-around"
             alignItems="center" 
             xs={12}
-            
-            
           >
             <Switch>
                 <Route exact path="/">
                     <Landing/>
                 </Route>
-                <Route exact path="/wizard">
+                <Route exact path="/angebot">
                     <Wizard/>
                 </Route>
-                <Route exact path="/delivery">
+                <Route exact path="/kennzeichnung">
+                    <Marking/>
+                </Route>
+                <Route exact path="/lieferstatus">
                     <Delivery />
                 </Route>
-                <Route  exact path="/processes">
+                <Route  exact path="/prozesse">
                     <Processes/>
                 </Route>
-                <Route  exact path="/quality">
+                <Route  exact path="/qualitaet">
                     <Quality/>
                 </Route>
-                <Route exact path="/contact">
+                <Route exact path="/kontakt">
                     <Contact/>
                 </Route>
-                <Route exact path="/reasons">
+                <Route exact path="/staerken">
                     <Reasons/>
                 </Route>
-                <Route exact path="/impressum">
+                <Route exact path="/datenschutz">
                     <DataProtection/>
                 </Route>
             </Switch>
